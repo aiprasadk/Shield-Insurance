@@ -1,154 +1,165 @@
-Shield Insurance Company provides reliable and comprehensive insurance plans for individuals and businesses, ensuring protection from various risks. Known for its commitment to customer care and security, Shield stands out in the market for its focus on coverage reliability, helping customers feel safe and secure.
+# Shield Insurance Power BI Pilot Project
 
-# Problem Statement    
-Shield Insurance aims to improve its data-driven decision-making by implementing a Power BI dashboard for actionable insights into key performance metrics. To evaluate this, they are considering a collaboration with AtliQ Technologies. As a Proof of Concept, Shield Insurance requires a Pilot Project in Power BI to demonstrate AtliQ’s capability to meet their specific needs before committing to a full-scale project.
+## 🛡️ Driving Data-Driven Decisions at Shield Insurance 🛡️
 
-## 1. ASK  
-### Questions: Preliminary Analysis  
-- Show total customers, total revenue, daily revenue growth, daily customer growth as key metrics
-- Month over month change% on key metrics
-- Segment customers based on their age groups: 18-24, 25-30, 31-40, 41-50, 51-65, and 65+
-- Total revenue split by age group, city
-- Total customers split by age group, city
-- Customers, daily customer growth trend by month
-- Revenue, daily revenue growth trend by month
-- Create a switch between revenue trend graph and customer trend graph
-- Filters on sale mode, age group, city, month, policy ID
-- Separate page for sales mode analysis
-- Total customers split percentage by sales mode
-- Total revenue split percentage by sales mode
-- Trend of sales mode over month
-- Separate page for age group analysis
-- Age group vs expected settlement
-- Age group vs sales mode
-- Age group vs policy preference
+Welcome to the GitHub repository for the Shield Insurance Power BI Pilot Project! This project demonstrates a powerful analytics solution designed to empower Shield Insurance with actionable insights into its key performance metrics. Developed as a Proof of Concept (POC) in collaboration with AtliQ Technologies, this Power BI dashboard aims to revolutionize data-driven decision-making, ensuring Shield Insurance continues to provide reliable and comprehensive protection to its customers.
 
+---
 
-## 2. PREPARE
-### Data Storage:  
-The dataset is completely available on the Code basis website platform where it stores and consolidates all available datasets for analysis.       
+## 🎯 The Challenge: Unlocking Business Intelligence 🎯
 
+Shield Insurance, renowned for its commitment to customer care and security, sought to enhance its strategic capabilities by leveraging its vast datasets. The goal was clear: transform raw data into a dynamic Power BI dashboard, providing real-time, actionable insights into crucial business performance indicators.
 
-## 3. PROCESS
-### Tools Used:
-- Microsoft Excel
-- Power BI, DAX Studio, DAX
+AtliQ Technologies was tasked with this pilot project to showcase its expertise in delivering tailored analytical solutions. This repository details the journey from data acquisition to insightful visualization, proving our capability to meet Shield Insurance's specific needs.
 
+---
 
-### Data Used:  
-This file contains all the meta information regarding the columns described in the CSV files. we have provided 5 CSV files:
-1. dim_customer.csv
-2. dim_date.csv
-3. dim_policies.csv
-4. fact_premiums.csv
-5. fact_settlements.csv
+## ✨ Project Goals & Deliverables (The "ASK") ✨
 
+This pilot project focuses on delivering a robust Power BI dashboard that provides comprehensive insights into:
 
-### About Data:  
-Column Description for dim_customer:  
-This table contains all the information about the customers
-1. customer_code: Unique code is given to each customer
-2. dob: Customer's date of birth
-3. city: It is the city where the customer is present  
+### Key Performance Metrics at a Glance:
+* **Total Customers:** A clear count of the customer base.
+* **Total Revenue:** The overall financial performance.
+* **Daily Revenue Growth (DRG):** Average daily increase in revenue.
+* **Daily Customer Growth (DCG):** Average daily increase in customer count.
 
-Column Description for dim_date:  
-This table contains the dates at daily, monthly levels and week numbers of the year  
-1. date: date at the daily level
-2. mmm_yy: date at the monthly level
-3. day_type: weekday (Sunday, Monday, etc.)
-4. week_no: week number of the year as per the date column
+### Trend Analysis & Growth:
+* **Month-over-Month Change %:** Percentage changes in key metrics (Total Customers, Total Revenue, DRG, DCG).
+* **Customer & Revenue Trends:** Visualizations showing daily customer and revenue growth trends by month.
+* **Interactive Trend Switch:** A user-friendly switch to toggle between revenue and customer trend graphs.
 
-Column Description for dim_policies:  
-This table contains all policies data  
-1. policy_id: unique ID for a particular policy
-2. base_cover: base cover amount for that particular policy
-3. base_premium_amt(INR): The premium amount that the customer has to pay to get the policy
+### Deep Dive into Customer & Sales Segments:
+* **Customer Age Group Segmentation:** Breaking down customers into specific age brackets: `18-24`, `25-30`, `31-40`, `41-50`, `51-65`, and `65+`.
+* **Revenue & Customer Distribution:**
+    * Total revenue split by age group and city.
+    * Total customers split by age group and city.
+* **Dedicated Sales Mode Analysis Page:**
+    * Total customers split percentage by sales mode (e.g., Offline-Agent, Online-App).
+    * Total revenue split percentage by sales mode.
+    * Trend of sales mode performance over months.
+* **Dedicated Age Group Analysis Page:**
+    * Age group vs. Expected Settlement.
+    * Age group vs. Sales Mode preference.
+    * Age group vs. Policy Preference.
 
-Column Description for fact_premiums:  
-This table contains all information about policy orders.  
-1. date: Date on which the policy is sold
-2. customer_code: Unique code is given to each customer
-3. Policy_id: Unique ID for each policy
-4. sales_mode: mode of the sales (Offline-Agent, Offline-Direct, Online-App, Online-Website)
-5. final_premium_amt(INR): The premium amount that is paid for that policy by the customer
+### Dynamic Filtering for Granular Insights:
+* Comprehensive filters for `Sales Mode`, `Age Group`, `City`, `Month`, and `Policy ID`.
 
-Column Description for fact_settlements:  
-This table contains information about policy settlement  
-1. age: Age of the policyholder
-2. settlement% : Percent of policy settlements happend for this age 
+---
 
+## ⚙️ Technical Implementation & Data Journey ⚙️
 
-### Data Cleaning & Transformation:
-- Microsoft Excel, Power Query was used to clean and transform raw data.
-- From fact_settlement, remove the empty columns
-- From fact_premiums, split sales_mode columns by delimiter '-' & renamed as Mode: Online/Offline , Mode: Through Medium
-- Check all the data types & changed into necessary data type. Example: Settlement % 
+This section details the technical aspects of the project, from data sourcing to the final analytical model.
 
+### 📊 Data Storage & Sources:
+All datasets are securely stored and consolidated on the **Code basis website platform**.
 
-# 4. ANALYZE
-Data Analyzing  
-Power BI was used to analyze data.
+### 🛠️ Tools Utilized:
+* **Microsoft Excel:** For initial data review and basic manipulations.
+* **Power BI Desktop:** The core tool for data modeling, analysis, and visualization.
+* **DAX Studio & DAX:** For advanced data analysis expressions and query optimization within Power BI.
 
+### 🗃️ Dataset Overview:
+The project leverages five key CSV files, each providing crucial information for a holistic view of Shield Insurance's operations:
 
-### Key Metrics:
-- DRG: Daily Revenue Growth (DRG) can be calculated by dividing the total revenue earned in a specific month by the number of unique dates within that month. This calculation gives us a clear picture of how much, on average, the company's revenue is growing each day during that time period.
-- DCG: Daily Customer Growth (DCR) measures the average daily increase in the customer base during a specific month. It's calculated by dividing the total new customers acquired in a month by the number of unique dates within that month.
+1.  **`dim_customer.csv`**: Contains customer demographics (`customer_code`, `dob`, `city`).
+2.  **`dim_date.csv`**: Provides date hierarchy information (`date`, `mmm_yy`, `day_type`, `week_no`).
+3.  **`dim_policies.csv`**: Details about insurance policies (`policy_id`, `base_cover`, `base_premium_amt(INR)`).
+4.  **`fact_premiums.csv`**: Records of policy sales (`date`, `customer_code`, `policy_id`, `sales_mode`, `final_premium_amt(INR)`).
+5.  **`fact_settlements.csv`**: Information on policy settlements (`age`, `settlement%`).
 
-DCR provides insights into the daily growth rate of the customer base, helping evaluate the company's ability to attract and retain customers on a day-to-day basis.
+### 🧹 Data Cleaning & Transformation Highlights:
+Performed using **Microsoft Excel** and **Power Query** in Power BI:
+* Removed empty columns from `fact_settlements`.
+* Split the `sales_mode` column in `fact_premiums` by delimiter '-' and renamed resulting columns to `Mode: Online/Offline` and `Mode: Through Medium` for clearer categorization.
+* Ensured correct data types for all columns, notably converting `Settlement %` to a numeric format.
 
+### 🧠 Data Modeling:
+A well-structured star schema was implemented to ensure efficient data retrieval and accurate calculations. The relationships between tables are designed for optimal performance and data integrity.
 
-### Data Modelling:    
 ![Screenshot 2024-09-23 211849](https://github.com/user-attachments/assets/eeda14a6-e3c2-4f51-bf67-46a04bebad2c)
+*The above image displays the data model established in Power BI, showcasing the relationships between the various dimension and fact tables.*
 
+### ➕ Custom Columns & Measures (DAX Power!):
 
-### New Column:  
-- dim_customer:
-  - Age = 2023 - YEAR(dim_customer[dob].[Date])
-  - AgeGroup = SWITCH(TRUE(), dim_customer[Age] >= 18 && dim_customer[Age] <= 24, "18-24", dim_customer[Age] >= 25 && dim_customer[Age] <= 30, "25-30", dim_customer[Age] >= 31 && dim_customer[Age] <= 40, "31-40", dim_customer[Age] >= 41 && dim_customer[Age] <= 50, "41-50", dim_customer[Age] >= 51 && dim_customer[Age] <= 65, "51-65", "65+")
-  - SettlementINDecimal = RELATED(fact_settlements[settlement %])
-- dim_date:
-  - Month = FORMAT(dim_date[date].[Date], "MMM")
-  - SortedBy = SWITCH(TRUE(), dim_date[Month]="Nov", 1, dim_date[Month]="Dec", 2, dim_date[Month]="Jan", 3, dim_date[Month]="Feb", 4, dim_date[Month]="Mar", 5, 6)
+Several calculated columns and robust DAX measures were created to derive the required insights:
 
+#### New Calculated Columns:
+* **`dim_customer` Table:**
+    * `Age` = `2023 - YEAR(dim_customer[dob].[Date])`
+    * `AgeGroup` = `SWITCH(TRUE(), dim_customer[Age] >= 18 && dim_customer[Age] <= 24, "18-24", ...)` (Categorizes customers into specified age ranges)
+    * `SettlementINDecimal` = `RELATED(fact_settlements[settlement %])` (Retrieves settlement percentage for each customer)
+* **`dim_date` Table:**
+    * `Month` = `FORMAT(dim_date[date].[Date], "MMM")`
+    * `SortedBy` = `SWITCH(TRUE(), dim_date[Month]="Nov", 1, ...)` (Custom sort order for months for consistent trend visualization)
 
-### Measures:
-- %CustomerChange = DIVIDE([Total Customers] - [LM Customers], [LM Customers], 0)
-- %DCGChange = DIVIDE([DCG] - [LM DCG], [LM DCG], 0)
-- %DRGChange = DIVIDE([DRG] - [LM DRG], [LM DRG], 0)
-- %RevenueChange = DIVIDE([Total Revenue] - [LM Revenue], [LM Revenue], 0)
-- Cus% = VAR _tot = CALCULATE([Total Customers], REMOVEFILTERS(fact_premiums)) RETURN DIVIDE([Total Customers], _tot)
-- DCG = VAR _tot_cus = [Total Customers] VAR _date = DISTINCTCOUNT(dim_date[date]) RETURN DIVIDE(_tot_cus, _date, 0)
-- DRG = VAR _tot_rev = [Total Revenue] VAR _date = DISTINCTCOUNT(dim_date[date]) RETURN DIVIDE(_tot_rev, _date, 0)
-- Excepted Settlement = ROUND(SUMX(fact_premiums, fact_premiums[final_premium_amt(INR)]*(1+RELATED(dim_customer[SettlementINDecimal]))), 0)
-- LM Customers = CALCULATE([Total Customers], PREVIOUSMONTH(dim_date[date]))
-- LM DCG = CALCULATE([DCG], PREVIOUSMONTH(dim_date[date]))
-- LM Revenue = CALCULATE([Total Revenue], PREVIOUSMONTH(dim_date[date]))
-- Rev% = VAR _tot = CALCULATE([Total Revenue], REMOVEFILTERS(fact_premiums)) RETURN DIVIDE([Total Revenue], _tot)
-- Total Customers = COUNT(dim_customer[customer_code])
-- Total Revenue = SUM(fact_premiums[final_premium_amt(INR)])
+#### Key DAX Measures:
+* **`Total Customers`** = `COUNT(dim_customer[customer_code])`
+* **`Total Revenue`** = `SUM(fact_premiums[final_premium_amt(INR)])`
+* **`DRG (Daily Revenue Growth)`** = `VAR _tot_rev = [Total Revenue] VAR _date = DISTINCTCOUNT(dim_date[date]) RETURN DIVIDE(_tot_rev, _date, 0)`
+* **`DCG (Daily Customer Growth)`** = `VAR _tot_cus = [Total Customers] VAR _date = DISTINCTCOUNT(dim_date[date]) RETURN DIVIDE(_tot_cus, _date, 0)`
+* **`LM Customers`**, **`LM Revenue`**, **`LM DCG`**: Measures to calculate values for the Last Month, enabling month-over-month comparisons.
+* **`%CustomerChange`**, **`%DRGChange`**, **`%DCGChange`**, **`%RevenueChange`**: Percentage change calculations for month-over-month growth.
+* **`Cus%`** & **`Rev%`**: Percentage of total customers and revenue for various segments.
+* **`Expected Settlement`** = `ROUND(SUMX(fact_premiums, fact_premiums[final_premium_amt(INR)]*(1+RELATED(dim_customer[SettlementINDecimal]))), 0)` (Calculates the expected settlement amount based on premium and settlement percentage).
 
-# 5. SHARE
+---
 
+## 📈 Key Insights & Strategic Recommendations (The "ACT") 📈
 
+The Power BI dashboard revealed several compelling insights, forming the basis for strategic recommendations:
 
+### Data-Backed Insights:
+* **Strong Customer Base & Revenue:** Shield Insurance proudly serves **26,841 customers** and has generated a substantial **989.25 million** in total revenue.
+* **Delhi: A Powerhouse Region:** **Delhi** emerges as the top-performing city, contributing **11,007 customers** and **401.57 million** in revenue.
+* **The Dominant 31-40 Age Group:** This age segment leads with **11,171 customers** and the highest revenue contribution of **343.76 million**, highlighting a strong appeal to younger and middle-aged demographics.
+* **Volatile Monthly Trends:**
+    * **March 2023** showcased remarkable growth with an **85% increase in revenue** and an **82% rise in customer numbers**.
+    * However, **April 2023** experienced a significant downturn, with revenue plummeting by **41.73%** and customers by **41.41%**. This sharp fluctuation requires immediate attention.
+* **Offline Agents Remain Key:** The **offline agent channel** is the primary business driver, accounting for **55.41% of customers** and **55.67% of total revenue**.
+* **Balanced Revenue Across Sales Modes:** While offline agents lead, revenue distribution across all sales modes is relatively balanced, ranging from **12.60% to 16.27%**.
+* **Most Popular Policy by Customers:** **"POL4321HEL"** is the most preferred policy, chosen by **4,434 customers**.
+* **Highest Revenue-Generating Policy:** **"POL2005HEL"** stands out for its revenue generation, amounting to **324.26 million**.
 
-# 6. ACT	
-### Insights:	
-- **Customer Base:** Shield Insurance has a total of 26,841 customers.
-- **Revenue:** The company generated a total revenue of 989.25 million.
-- **Top City:** Delhi leads with 11,007 customers and revenue of 401.57 million, making it the top-performing region.
-- **Top Age Group:** The 31-40 age group has the largest customer base with 11,171 customers, contributing the highest revenue of 343.76 million. This shows the company's strong appeal to younger and middle-aged demographics.
-- **Monthly Trends:** March 2023 saw remarkable growth with an 85% increase in revenue and 82% rise in customer numbers. However, April 2023 experienced a sharp decline, with revenue dropping by 41.73% and customers by 41.41%.
-- **Sales Channel:** The offline agent channel accounts for 55.41% of customers and 55.67% of total revenue, indicating that traditional agent-based sales remain the primary business driver.
-- **Revenue by Sales Mode:** Revenue distribution across sales modes is fairly balanced, with percentages ranging from 12.60% to 16.27%.
-- **Top Policy by Customers:** Policy ID “POL4321HEL” is the most popular, with 4,434 customers choosing it for their insurance needs.
-- **Top Policy by Revenue:** Policy ID “POL2005HEL” has generated the highest revenue, amounting to 324.26 million.
+### 💡 Recommendations: Strategic Actions for Shield Insurance 💡
 
+Based on the comprehensive analysis of the Power BI dashboard, the following strategic recommendations are put forth to drive sustained growth, optimize operations, and enhance customer satisfaction for Shield Insurance:
 
-### Recommendations:	
-- **Focus on Digital Channels:** While the offline agent channel dominates, increasing investment in digital sales channels could diversify customer acquisition and boost revenue.
-- **Target Younger Demographics:** Continue to engage the 31-40 age group with tailored offerings, as they contribute the highest customer base and revenue.
-- **Address Monthly Fluctuations:** Investigate the reasons behind the sharp decline in April 2023 to prevent future drops and ensure consistent growth.
-- **Promote Top-Performing Policies:** Highlight and expand marketing efforts around popular policies like "POL4321HEL" and high-revenue policies like "POL2005HEL."
+1.  **Customer Growth & Stability:**
+    * **Implement Predictive Analytics:** Utilize advanced predictive analytics to proactively manage and mitigate revenue fluctuations. This will allow for more stable financial performance.
+    * **Target Key Demographics:** Develop targeted marketing campaigns and product offerings specifically for younger (18-24) and older (65+) demographics to unlock new growth opportunities and expand the customer base.
 
-Thank you for reading and evaluating my repo :)  Live Dashboard [Link](https://app.powerbi.com/view?r=eyJrIjoiMDdjNzI3ODUtZTJiYS00YmRhLWJhYjEtNTUxYzhmMGFkNzU4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+2.  **Age Group Focus: Strengthen Retention:**
+    * **Tailored Offerings for High-Revenue Group:** Intensify customer retention efforts for the high-revenue-generating **31-40 age group**. This includes developing more tailored products, personalized communication, and loyalty programs that resonate with their specific needs and preferences.
+
+3.  **Geographical Strategy: Replicate Success:**
+    * **Expand Successful Strategies:** Analyze the successful strategies employed in **Delhi NCR** (your top-performing region) and replicate these best practices in other key regions, such as **Mumbai** and **Chennai**, to stimulate growth and market penetration.
+
+4.  **Sales Channel Optimization: Enhance Digital Engagement:**
+    * **Invest in Digital Platforms:** Enhance and optimize digital sales platforms (online app, website) to better engage younger customers who show a strong preference for online channels. Improve user experience, streamline the digital purchasing process, and increase online visibility.
+
+5.  **Policy & Risk Management: Tailored for Settlement Groups:**
+    * **Develop Specific Policies:** Create and promote tailored insurance policies for age groups identified with high settlement rates, specifically **31-40, 25-30, and 41-50**. By offering policies that address their unique risk profiles, Shield Insurance can improve overall risk management and reduce potential liabilities.
+
+6.  **Product & Channel Strategy: Customized Offerings:**
+    * **Age-Group Specific Customization:** Customize product offerings based on specific age group preferences.
+    * **Multi-Channel Engagement:** Ensure a seamless and consistent customer experience across all sales channels (offline agents, online app, website) to foster multi-channel engagement and maximize customer satisfaction and retention.
+
+---
+
+## 🚀 Experience the Live Dashboard! 🚀
+
+Dive into the interactive Power BI dashboard yourself to explore the data and insights firsthand!
+
+🔗 [**Live Dashboard Link**](https://app.powerbi.com/view?r=eyJrIjoiMDdjNzI3ODUtZTJiYS00YmRhLWJhYjEtNTUxYzhmMGFkNzU4IiwidCI6ImM2ZTU0OWIzLTVmNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+
+---
+
+## 🙏 Thank You! 🙏
+
+Thank you for exploring the Shield Insurance Power BI Pilot Project. This initiative exemplifies how data analytics can drive informed decisions and foster continuous growth for businesses like Shield Insurance.
+
+Feel free to reach out with any questions or feedback.
+
+---
