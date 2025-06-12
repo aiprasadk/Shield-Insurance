@@ -78,7 +78,8 @@ Performed using **Microsoft Excel** and **Power Query** in Power BI:
 ### 🧠 Data Modeling:
 A well-structured star schema was implemented to ensure efficient data retrieval and accurate calculations. The relationships between tables are designed for optimal performance and data integrity.
 
-![Screenshot 2024-09-23 211849](https://github.com/user-attachments/assets/eeda14a6-e3c2-4f51-bf67-46a04bebad2c)
+![image](https://github.com/user-attachments/assets/5b1ebda3-fd04-4e7a-8000-fd5e70f5d1b7)
+
 *The above image displays the data model established in Power BI, showcasing the relationships between the various dimension and fact tables.*
 
 ### ➕ Custom Columns & Measures (DAX Power!):
@@ -104,6 +105,11 @@ Several calculated columns and robust DAX measures were created to derive the re
 * **`Cus%`** & **`Rev%`**: Percentage of total customers and revenue for various segments.
 * **`Expected Settlement`** = `ROUND(SUMX(fact_premiums, fact_premiums[final_premium_amt(INR)]*(1+RELATED(dim_customer[SettlementINDecimal]))), 0)` (Calculates the expected settlement amount based on premium and settlement percentage).
 
+### Dashboard snips:
+![image](https://github.com/user-attachments/assets/bb91379e-259e-44a3-a0c5-f67ae9f72d64)
+![image](https://github.com/user-attachments/assets/51a2d8ae-eba1-4129-aea1-ed60f98f9095)
+![image](https://github.com/user-attachments/assets/8edcf257-4d45-4b89-a488-1bc0f87d6fb2)
+![image](https://github.com/user-attachments/assets/c1da20c4-4a2e-4388-aeb1-cecbce418548)
 ---
 
 ### 💡 Recommendations: Strategic Actions for Shield Insurance 💡
