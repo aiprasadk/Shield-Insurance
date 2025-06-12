@@ -106,22 +106,6 @@ Several calculated columns and robust DAX measures were created to derive the re
 
 ---
 
-## 📈 Key Insights & Strategic Recommendations (The "ACT") 📈
-
-The Power BI dashboard revealed several compelling insights, forming the basis for strategic recommendations:
-
-### Data-Backed Insights:
-* **Strong Customer Base & Revenue:** Shield Insurance proudly serves **26,841 customers** and has generated a substantial **989.25 million** in total revenue.
-* **Delhi: A Powerhouse Region:** **Delhi** emerges as the top-performing city, contributing **11,007 customers** and **401.57 million** in revenue.
-* **The Dominant 31-40 Age Group:** This age segment leads with **11,171 customers** and the highest revenue contribution of **343.76 million**, highlighting a strong appeal to younger and middle-aged demographics.
-* **Volatile Monthly Trends:**
-    * **March 2023** showcased remarkable growth with an **85% increase in revenue** and an **82% rise in customer numbers**.
-    * However, **April 2023** experienced a significant downturn, with revenue plummeting by **41.73%** and customers by **41.41%**. This sharp fluctuation requires immediate attention.
-* **Offline Agents Remain Key:** The **offline agent channel** is the primary business driver, accounting for **55.41% of customers** and **55.67% of total revenue**.
-* **Balanced Revenue Across Sales Modes:** While offline agents lead, revenue distribution across all sales modes is relatively balanced, ranging from **12.60% to 16.27%**.
-* **Most Popular Policy by Customers:** **"POL4321HEL"** is the most preferred policy, chosen by **4,434 customers**.
-* **Highest Revenue-Generating Policy:** **"POL2005HEL"** stands out for its revenue generation, amounting to **324.26 million**.
-
 ### 💡 Recommendations: Strategic Actions for Shield Insurance 💡
 
 Based on the comprehensive analysis of the Power BI dashboard, the following strategic recommendations are put forth to drive sustained growth, optimize operations, and enhance customer satisfaction for Shield Insurance:
