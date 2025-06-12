@@ -1,8 +1,8 @@
-# Shield Insurance Power BI Pilot Project
+# Shield Insurance Power BI 
 
 ## 🛡️ Driving Data-Driven Decisions at Shield Insurance 🛡️
 
-Welcome to the GitHub repository for the Shield Insurance Power BI Pilot Project! This project demonstrates a powerful analytics solution designed to empower Shield Insurance with actionable insights into its key performance metrics. Developed as a Proof of Concept (POC) in collaboration with AtliQ Technologies, this Power BI dashboard aims to revolutionize data-driven decision-making, ensuring Shield Insurance continues to provide reliable and comprehensive protection to its customers.
+Welcome to the GitHub repository for the Shield Insurance Power BI Internship Project! This project demonstrates a powerful analytics solution designed to empower Shield Insurance with actionable insights into its key performance metrics. Developed as a Proof of Concept (POC) in collaboration with AtliQ Technologies, this Power BI dashboard aims to revolutionize data-driven decision-making, ensuring Shield Insurance continues to provide reliable and comprehensive protection to its customers.
 
 ---
 
@@ -10,13 +10,13 @@ Welcome to the GitHub repository for the Shield Insurance Power BI Pilot Project
 
 Shield Insurance, renowned for its commitment to customer care and security, sought to enhance its strategic capabilities by leveraging its vast datasets. The goal was clear: transform raw data into a dynamic Power BI dashboard, providing real-time, actionable insights into crucial business performance indicators.
 
-AtliQ Technologies was tasked with this pilot project to showcase its expertise in delivering tailored analytical solutions. This repository details the journey from data acquisition to insightful visualization, proving our capability to meet Shield Insurance's specific needs.
+AtliQ Technologies was tasked with this internship project to showcase its expertise in delivering tailored analytical solutions. This repository details the journey from data acquisition to insightful visualization, proving our capability to meet Shield Insurance's specific needs.
 
 ---
 
-## ✨ Project Goals & Deliverables (The "ASK") ✨
+## ✨ Project Goals & Deliverables ✨
 
-This pilot project focuses on delivering a robust Power BI dashboard that provides comprehensive insights into:
+This internship project focuses on delivering a robust Power BI dashboard that provides comprehensive insights into:
 
 ### Key Performance Metrics at a Glance:
 * **Total Customers:** A clear count of the customer base.
@@ -25,7 +25,7 @@ This pilot project focuses on delivering a robust Power BI dashboard that provid
 * **Daily Customer Growth (DCG):** Average daily increase in customer count.
 
 ### Trend Analysis & Growth:
-* **Month-over-Month Change %:** Percentage changes in key metrics (Total Customers, Total Revenue, DRG, DCG).
+* **Month-over-Month Change%:** Percentage changes in key metrics (Total Customers, Total Revenue, DRG, DCG).
 * **Customer & Revenue Trends:** Visualizations showing daily customer and revenue growth trends by month.
 * **Interactive Trend Switch:** A user-friendly switch to toggle between revenue and customer trend graphs.
 
