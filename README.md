@@ -142,7 +142,7 @@ Based on the comprehensive analysis of the Power BI dashboard, the following str
 
 Dive into the interactive Power BI dashboard yourself to explore the data and insights firsthand!
 
-🔗 [**Live Dashboard Link**](https://app.powerbi.com/view?r=eyJrIjoiMDdjNzI3ODUtZTJiYS00YmRhLWJhYjEtNTUxYzhmMGFkNzU4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+🔗 [**Live Dashboard Link**](https://app.powerbi.com/view?r=eyJrIjoiZjNjMzFjMDAtNjRlMi00ODZiLTg0ODktMmJmOTE0M2VkMjViIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
 ---
 
