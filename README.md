@@ -1,3 +1,5 @@
+<img width="1280" height="720" alt="Shield Insurance thumbnail" src="https://github.com/user-attachments/assets/d1cb6d85-679b-4367-8275-60e37a119326" />
+
 # Shield Insurance Power BI 
 
 ## 🛡️ Driving Data-Driven Decisions at Shield Insurance 🛡️
